@@ -22,9 +22,13 @@ public class MainController {
     @Autowired
     private UserRepository userRepository;
 
+    // URL Templates
+
+    //Tracking URL
     @GetMapping("/")
     public String home(Model model) {
         model.addAttribute("name", "World");
+        // This template will be displayed
         return "home";
     }
 
